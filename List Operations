@@ -1,0 +1,5 @@
+weather_types = ["Rain", "Sunny", "Fog", "Fog-Rain", "Thunderstorm", "Type of Weather"]
+weather_type_found = []
+for wt in weather_types:
+    found=wt in new_weather #new_weather包含天气类型
+    weather_type_found.append(found)
