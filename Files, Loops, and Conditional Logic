@@ -1,0 +1,19 @@
+f = open('dq_unisex_names.csv', 'r')
+names = f.read()
+names_list = names.split('\n')
+nested_list=[]
+for nl in names_list:
+    comma_list=nl.split(',')
+    nested_list.append(comma_list)
+numerical_list=[]
+for nl in nested_list:
+    s=nl[0]
+    i=float(nl[1])
+    si=[s,i]
+    numerical_list.append(si)
+numerical_list[len(numerical_list)-1]
+thousand_or_greater=[]
+for nl in numerical_list:
+    if nl[1]>=1000:
+        thousand_or_greater.append(nl[0])
+print(thousand_or_greater[0:10])
