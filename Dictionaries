@@ -1,0 +1,7 @@
+pantry = ["apple", "orange", "grape", "apple", "orange", "apple", "tomato", "potato", "grape"]
+pantry_counts={}
+for pa in pantry:
+    if pa in pantry_counts:
+        pantry_counts[pa]=pantry_counts[pa]+1
+    else:
+        pantry_counts[pa]=1
